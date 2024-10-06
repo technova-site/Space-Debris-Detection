@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cedar X - NASA space trash debris</title>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+
+  <!-- <script src="//unpkg.com/three"></script> -->
+  <!-- <script src="//unpkg.com/three/examples/js/controls/TrackballControls.js"></script> -->
+  <!-- <script src="//unpkg.com/three-globe"></script> -->
+  <!--<script src="../../dist/three-globe.js"></script>-->
+</head>
+
+<body>
+  <div class="left-controls">
+    <div class="control">
+      <label>Size</label>
+      <select id="filter_size">
+        <option>ALL</option>
+        <option value="SMALL">SMALL (&lt; 0.1m<sup>²</sup>)</option>
+        <option value="MEDIUM">MEDIUM (0.1m<sup>²</sup> – 1m<sup>²</sup>)</option>
+        <option value="LARGE">LARGE (&gt; 1m<sup>²</sup>)</option>
+      </select>
+    </div>
+    <div class="control">
+      <label>Object Type</label>
+      <select id="filter_object_type">
+        <option>ALL</option>
+        <option>PAYLOAD</option>
+        <option>DEBRIS</option>
+        <option>ROCKET BODY</option>
+        <option>TBA</option>
+      </select>
+    </div>
+    <div class="control">
+      <label>Country Origin</label>
+      <select id="filter_country"></select>
+    </div>
+    <div class="control">
+      <label>Period</label>
+      <select id="filter_period">
+        <option>ALL</option>
+        <option value="0-100">[0-300] min</option>
+        <option value="100-300">[100-300] min</option>
+        <option value="200-300">[200-300] min</option>
+        <option value="300-900">[300-900] min</option>
+        <option value="900-20000">&gt; 900 min</option>
+      </select>
+    </div>
+    <div class="control">
+      <label>
+        Conjunction assessment
+        <input type="checkbox" id="option_conjunction">
+      </label>
+
+    </div>
+
+    <div class="alert hidden">
+
+    </div>
+
+  </div>
+  <!-- <div class="controls">
+    <div>
+    </div>
+    <div>
+      <button class="btn" id="test">SIMULATE</button>
+      <button class="btn">PROBABILITIES</button>
+      <button class="btn">COLLISION</button>
+    </div>
+  </div> -->
+  <div class="console console1"></div>
+  <div class="console console2"></div>
+
+  <div id="globeViz"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
