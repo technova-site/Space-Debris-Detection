@@ -20,8 +20,6 @@ The increasing amount of debris orbiting Earth could potentially limit our acces
  - Plot
  - Google Colab
 
-check the package.json file for more detailed info.
-
 # Team members
  - BELARBI Ouissal
  - BENALI Mohamed-Amine
