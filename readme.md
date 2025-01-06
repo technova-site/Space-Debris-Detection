@@ -23,7 +23,7 @@ The increasing amount of debris orbiting Earth could potentially limit our acces
 # Team members
  - BELARBI Ouissal
  - BENALI Mohamed-Amine
- - BEN HADDA Oussama
+ - Oussama B H
  - HAMOUICH Walid
 
 [google-colab]: https://colab.research.google.com/drive/1_og-Ao76_lQIOc-RIPByc4N8szm-tgh0?usp=sharing
